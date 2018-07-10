@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="utf-8">
+
+</head>
+
+<body>
+
+     <h1 align="left">not imgur</h1>
+     <h4 id="confirmation"></h4>
+     <input type="file" id="fileButton" value="upload" />
+
+     <img id="dlimg" src="" />
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-storage.js"></script>
+<script>
+     // Initialize Firebase
+     var config = {
+          apiKey: "AIzaSyDB8myP-1DvvIgFX-ZDCWcQ35egs1rDPxc",
+          authDomain: "not-imgur.firebaseapp.com",
+          databaseURL: "https://not-imgur.firebaseio.com",
+          projectId: "not-imgur",
+          storageBucket: "not-imgur.appspot.com",
+          messagingSenderId: "477208841513"
+     };
+
+     firebase.initializeApp(config);
+</script>
+
+<script src="not-imgur.js"></script>
+
+<style>
+     body {
+          background-color: black;
+          color: lime;
+     }
+</style>
+
+</html>
