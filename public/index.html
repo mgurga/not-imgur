@@ -2,23 +2,35 @@
 <html>
 
 <head>
-
+     <title>not imgur</title>
      <meta charset="utf-8">
 
 </head>
 
 <body>
+     <div>
+          <h1>not imgur</h1>
+     </div>
+     <h2 id="confirmation"></h4>
 
-     <h1 align="left">not imgur</h1>
-     <h4 id="confirmation"></h4>
+     <br />
+     <p id="nameh">name of image:</p>
+     <input type="text" id="nameInput" />
+     <h2 id='imgName'></h2>
      <input type="file" id="fileButton" value="upload" />
-
+     <br />
      <img id="dlimg" src="" />
-</body>
 
+     <br />
+     <br />
+     <br />
+     <button id='uploadButton' onclick='uploadImg()'>upload image</button>
+</body>
 
 <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-database.js"></script>
+
 <script>
      // Initialize Firebase
      var config = {
@@ -39,6 +51,10 @@
      body {
           background-color: black;
           color: lime;
+     }
+
+     div {
+          outline: 5px dotted green;
      }
 </style>
 
